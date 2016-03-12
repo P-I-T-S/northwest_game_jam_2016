@@ -10,6 +10,10 @@
     <sprite>sprites\road</sprite>
     <sprite>sprites\wall</sprite>
     <sprite>sprites\spr_grass</sprite>
+    <sprite>sprites\spr_player_down</sprite>
+    <sprite>sprites\spr_player_right</sprite>
+    <sprite>sprites\spr_player_up</sprite>
+    <sprite>sprites\spr_player_left</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
