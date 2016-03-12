@@ -1,19 +1,14 @@
 // scr_move_state
 scr_get_input();
 
-if(dash_key){
-    state = scr_dash_state;
-}
-
-
-
 // get the axis
 var xaxis = (right_key-left_key);
 var yaxis = (down_key - up_key);
 
 
 // Get direction 
-var dir = point_direction(0,0,xaxis,yaxis);
+// made dir local
+dir = point_direction(0,0,xaxis,yaxis);
 
 // get length
 if(xaxis == 0 && yaxis == 0){

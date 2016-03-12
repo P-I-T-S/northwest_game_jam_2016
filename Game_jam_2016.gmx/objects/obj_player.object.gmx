@@ -34,11 +34,13 @@ spd = 4;
 hspd = 0;
 vspd = 0;
 len=0;
+dir=0;
 image_speed = 0;
-scr_get_input()
+scr_get_input() ;
 // we are setting it :
 //  so we do not need parenthesis
 state = scr_move_state;
+
 
 
 </string>
@@ -69,6 +71,7 @@ state = scr_move_state;
 scr_get_input();
 
 scr_move_state();
+
 
 // stop animating 
 if(!down_key and !right_key and !left_key and !up_key){
@@ -102,6 +105,31 @@ image_index = 0;
             <string>/// set the forzen state
 
 state = scr_frozen_state; 
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="68">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = scr_dash_state; 
 
 
 </string>
